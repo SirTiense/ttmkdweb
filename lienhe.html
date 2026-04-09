@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Liên hệ & Phản hồi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+  <img src="logo.png">
+  <span>SECURITY</span>
+</div>
+
+<div class="menu">
+<a href="index.html">Trang chủ</a>
+<a href="nguyco.html">Nguy cơ</a>
+<a href="baomat.html">Bảo mật</a>
+<a href="kynang.html">Kỹ năng</a>
+<a href="lienhe.html">Liên hệ</a>
+</div>
+</nav>
+
+<!-- GIỚI THIỆU -->
+<div class="section">
+
+<h1>Liên hệ & Phản hồi</h1>
+
+<p style="color:var(--muted); max-width:700px;">
+Nếu bạn có ý kiến đóng góp hoặc câu hỏi về nội dung website, hãy gửi phản hồi cho chúng tôi thông qua biểu mẫu bên dưới.
+</p>
+
+<img src="TTMKD.png">
+
+</div>
+
+<!-- FORM -->
+<div class="section">
+
+<h2>Biểu mẫu góp ý</h2>
+
+<div style="margin-top:20px;">
+<iframe src="https://forms.gle/ossh69hoMiC9TJ4YA"
+width="100%" height="600" frameborder="0">
+Đang tải…
+</iframe>
+<p style="font-size:13px; color:gray;">
+Chúng tôi trân trọng mọi ý kiến đóng góp để cải thiện website.
+</p>
+</div>
+
+</div>
+
+<!-- THÔNG TIN NHÓM -->
+<div class="section">
+
+<h2>Thông tin nhóm</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Nhóm</h3>
+<p>TTMKD - Lớp 12A01</p>
+<p> Dự án: Bảo mật thông tin cá nhân trên Internet</p>
+</div>
+
+<div class="card">
+<h3>Thành viên</h3>
+<p>
+Phạm Khánh Toàn <br>
+Phạm Minh Tiến <br>
+Phan Anh Minh <br>
+Nguyễn Trí Dũng <br>
+Phạm Anh Khoa
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+<footer>
+Nhóm TTMKD - 12A01
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', ()=>{
+  cards.forEach(card=>{
+    if(card.getBoundingClientRect().top < window.innerHeight - 80){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

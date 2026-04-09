@@ -1,0 +1,174 @@
+:root{
+  --primary:#4f46e5;
+  --accent:#22d3ee;
+  --bg:#0b1120;
+  --card:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:#020617;
+}
+
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  margin-left:25px;
+  position:relative;
+}
+
+/* underline đẹp */
+nav a::after{
+  content:'';
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--accent);
+  transition:.3s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+/* HERO */
+.hero{
+  padding:120px 60px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:600px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  background:var(--primary);
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:var(--accent);
+}
+
+/* SECTION */
+.section{
+  max-width:1100px;
+  margin:80px auto;
+  padding:0 60px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:10px;
+  border:1px solid #1f2937;
+  transition:.4s;
+  opacity:0;
+  transform:translateY(30px);
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+/* IMAGE */
+img{
+  width:100%;
+  border-radius:10px;
+  margin-top:21px;
+  transition:.4s;
+  height:600px;
+}
+
+img:hover{
+  transform:scale(1.02);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 60px;
+  background:#020617;
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:flex-end;
+  gap:10px;
+}
+
+/* FIX LỆCH 100% */
+.logo img{
+  width:30px;
+  height:30px;
+  display:block;          /* 🔥 QUAN TRỌNG */
+}
+
+/* TEXT */
+.logo span{
+  font-size:25px;
+  font-weight:700;
+  line-height:40px;       /* 🔥 BẰNG HEIGHT IMG */
+}
+
+/* MENU */
+.menu a{
+  margin-left:25px;
+}
+.logo{
+  transform:translateY(-1px);
+}
+video{
+  border-radius:12px;
+}

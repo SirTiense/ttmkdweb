@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bảo mật thông tin</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+  <img src="logo.png">
+  <span>SECURITY</span>
+</div>
+
+<div class="menu">
+<a href="index.html">Trang chủ</a>
+<a href="nguyco.html">Nguy cơ</a>
+<a href="baomat.html">Bảo mật</a>
+<a href="kynang.html">Kỹ năng</a>
+<a href="lienhe.html">Liên hệ</a>
+</div>
+</nav>
+
+<div class="section">
+
+<h1>Cách bảo mật thông tin cá nhân</h1>
+
+<p style="color:var(--muted); max-width:700px;">
+Việc bảo vệ thông tin cá nhân trên Internet là vô cùng quan trọng. 
+Chỉ với một vài thói quen đơn giản, bạn có thể giảm thiểu đáng kể nguy cơ bị tấn công mạng.
+</p>
+
+
+</div>
+
+<!-- MẬT KHẨU -->
+<div class="section">
+
+<h2>Tạo mật khẩu mạnh</h2>
+
+<img src="strongpass.jpg" alt="strongpass">
+
+<div class="grid">
+
+<div class="card">
+<h3>Nguyên tắc</h3>
+<p>
+Mật khẩu nên có ít nhất 8–12 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.
+</p>
+</div>
+
+<div class="card">
+<h3>Không nên</h3>
+<p>
+Không dùng ngày sinh, tên hoặc các thông tin dễ đoán làm mật khẩu.
+</p>
+</div>
+
+<div class="card">
+<h3>Gợi ý</h3>
+<p>
+Sử dụng câu mật khẩu (passphrase) như: “ToiThichHoc2026!” để dễ nhớ nhưng khó đoán.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- 2FA -->
+<div class="section">
+
+<h2>Xác thực hai lớp (2FA)</h2>
+
+<img src="2FA.webp">
+
+<div class="grid">
+
+<div class="card">
+<h3>Khái niệm</h3>
+<p>
+2FA là lớp bảo mật thứ hai ngoài mật khẩu, thường là mã OTP gửi về điện thoại.
+</p>
+</div>
+
+<div class="card">
+<h3>Lợi ích</h3>
+<p>
+Ngay cả khi lộ mật khẩu, kẻ xấu vẫn không thể đăng nhập nếu không có mã xác thực.
+</p>
+</div>
+
+<div class="card">
+<h3>Ứng dụng</h3>
+<p>
+Nên bật 2FA cho Facebook, Gmail, ngân hàng và các tài khoản quan trọng.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- MXH -->
+<div class="section">
+
+<h2>Bảo mật mạng xã hội</h2>
+
+<img src="socialsecure.webp">
+
+<div class="grid">
+
+<div class="card">
+<h3>Cài đặt riêng tư</h3>
+<p>
+Hạn chế hiển thị thông tin cá nhân ở chế độ công khai.
+</p>
+</div>
+
+<div class="card">
+<h3>Cảnh giác</h3>
+<p>
+Không nhấp vào link lạ hoặc tin nhắn đáng ngờ.
+</p>
+</div>
+
+<div class="card">
+<h3>Kiểm tra đăng nhập</h3>
+<p>
+Thường xuyên kiểm tra thiết bị đăng nhập và đăng xuất khỏi thiết bị lạ.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- WIFI -->
+<div class="section">
+
+<h2>Sử dụng WiFi an toàn</h2>
+
+<img src="safewifi.webp">
+
+<div class="grid">
+
+<div class="card">
+<h3>Không dùng WiFi công cộng</h3>
+<p>
+Hạn chế đăng nhập tài khoản quan trọng khi dùng WiFi miễn phí.
+</p>
+</div>
+
+<div class="card">
+<h3>Dùng VPN</h3>
+<p>
+VPN giúp mã hóa dữ liệu khi truy cập Internet.
+</p>
+</div>
+
+<div class="card">
+<h3>Tắt tự động kết nối</h3>
+<p>
+Tránh thiết bị tự kết nối với mạng WiFi không an toàn.
+</p>
+</div>
+
+</div>
+</div>
+
+<footer>
+Nhóm TTMKD - 12A01 <br>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', ()=>{
+  cards.forEach(card=>{
+    if(card.getBoundingClientRect().top < window.innerHeight - 80){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

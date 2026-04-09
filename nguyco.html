@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Nguy cơ trên Internet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+  <img src="logo.png">
+  <span>SECURITY</span>
+</div>
+
+<div class="menu">
+<a href="index.html">Trang chủ</a>
+<a href="nguyco.html">Nguy cơ</a>
+<a href="baomat.html">Bảo mật</a>
+<a href="kynang.html">Kỹ năng</a>
+<a href="lienhe.html">Liên hệ</a>
+</div>
+</nav>
+
+<div class="section">
+
+<h1>Những nguy cơ trên Internet</h1>
+
+<p style="color:var(--muted); max-width:700px;">
+Internet mang lại nhiều tiện ích nhưng cũng tiềm ẩn rất nhiều rủi ro.
+Nếu không cẩn thận, người dùng có thể trở thành nạn nhân của các cuộc tấn công mạng.
+</p>
+
+
+
+</div>
+
+<!-- PHISHING -->
+<div class="section">
+
+<h2>Lừa đảo trực tuyến (Phishing)</h2>
+
+<img src="phishing.jpg" alt="phishing">
+
+<div class="grid">
+
+<div class="card">
+<h3>Biểu hiện</h3>
+<p>Kẻ xấu giả mạo ngân hàng hoặc người quen để lừa lấy thông tin.</p>
+</div>
+
+<div class="card">
+<h3>Hậu quả</h3>
+<p>Mất tài khoản, mất tiền và bị chiếm quyền kiểm soát.</p>
+</div>
+
+<div class="card">
+<h3>Ví dụ</h3>
+<p>Link giả mạo yêu cầu đăng nhập Facebook hoặc ngân hàng.</p>
+</div>
+
+</div>
+</div>
+
+<!-- VIRUS -->
+<div class="section">
+
+<h2>Virus và mã độc</h2>
+<img src="virus.jpg" alt="virus">
+
+
+<div class="grid">
+
+<div class="card">
+<h3>Nguyên nhân</h3>
+<p>Tải phần mềm crack hoặc file không rõ nguồn gốc.</p>
+</div>
+
+<div class="card">
+<h3>Tác hại</h3>
+<p>Làm chậm máy, mất dữ liệu và bị theo dõi.</p>
+</div>
+
+<div class="card">
+<h3>Dấu hiệu</h3>
+<p>Máy chạy chậm, xuất hiện quảng cáo lạ.</p>
+</div>
+
+</div>
+</div>
+
+<!-- DATA -->
+<div class="section">
+
+<h2>Rò rỉ thông tin cá nhân</h2>
+
+<img src="dataleak.jpg" alt="data leak">
+
+<div class="grid">
+
+<div class="card">
+<h3>Nguyên nhân</h3>
+<p>Chia sẻ thông tin quá nhiều trên mạng xã hội.</p>
+</div>
+
+<div class="card">
+<h3>Hậu quả</h3>
+<p>Bị mạo danh, lừa đảo hoặc bán thông tin.</p>
+</div>
+
+<div class="card">
+<h3>Ví dụ</h3>
+<p>Đăng công khai số điện thoại, CCCD.</p>
+</div>
+
+</div>
+</div>
+
+<footer>
+Nhóm TTMKD - 12A01 <br>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', ()=>{
+  cards.forEach(card=>{
+    if(card.getBoundingClientRect().top < window.innerHeight - 80){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
