@@ -219,23 +219,4 @@ video{
     height:auto;
   }
 }
-@media (max-width:768px){
 
-  nav{
-    flex-direction:column;
-    align-items:center;
-    padding:15px;
-  }
-
-  .menu{
-    display:flex;
-    flex-wrap:wrap;              /* 🔥 QUAN TRỌNG */
-    justify-content:center;
-  }
-
-  .menu a{
-    margin:6px 10px;
-    font-size:14px;
-  }
-
-}
