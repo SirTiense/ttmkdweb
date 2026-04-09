@@ -176,7 +176,9 @@ video{
 }
 /* ===== MOBILE ===== */
 @media (max-width: 768px){
-
+ .menu{
+    gap:8px;
+  }
   nav{
     flex-direction:column;
     gap:10px;
