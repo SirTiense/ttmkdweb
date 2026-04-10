@@ -176,9 +176,6 @@ footer{
   padding:40px;
   color:var(--muted);
 }
-.hamburger{
-  display:none;
-}
 /* ===== MOBILE ===== */
 @media (max-width:768px){
 
