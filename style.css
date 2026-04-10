@@ -7,17 +7,29 @@
   --muted:#9ca3af;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
 body{
-  margin:0;
   font-family:Inter,Segoe UI,sans-serif;
   background:var(--bg);
   color:var(--text);
   line-height:1.6;
 }
 
-/* NAV */
+/* ===== NAV ===== */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 60px;
+  background:#020617;
+  position:relative;
+}
+
 nav a{
   color:var(--text);
   text-decoration:none;
@@ -25,7 +37,7 @@ nav a{
   position:relative;
 }
 
-/* underline đẹp */
+/* underline hover */
 nav a::after{
   content:'';
   position:absolute;
@@ -41,7 +53,38 @@ nav a:hover::after{
   width:100%;
 }
 
-/* HERO */
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:30px;
+  height:30px;
+  display:block;
+}
+
+.logo span{
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+/* MENU */
+.menu{
+  display:flex;
+}
+
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* ===== HERO ===== */
 .hero{
   padding:120px 60px;
   max-width:1100px;
@@ -73,7 +116,7 @@ nav a:hover::after{
   background:var(--accent);
 }
 
-/* SECTION */
+/* ===== SECTION ===== */
 .section{
   max-width:1100px;
   margin:80px auto;
@@ -110,16 +153,21 @@ nav a:hover::after{
 /* IMAGE */
 img{
   width:100%;
-  border-radius:10px;
-  margin-top:21px;
-  transition:.4s;
-  height:auto;
+  aspect-ratio:16/9;
   object-fit:cover;
-  aspect-ratio:16/9; 
+  border-radius:10px;
+  margin-top:20px;
+  transition:.4s;
 }
 
 img:hover{
   transform:scale(1.02);
+}
+
+/* VIDEO */
+video{
+  width:100%;
+  border-radius:12px;
 }
 
 /* FOOTER */
@@ -128,58 +176,16 @@ footer{
   padding:40px;
   color:var(--muted);
 }
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 60px;
-  background:#020617;
-}
 
-/* LOGO */
-.logo{
-  display:flex;
-  align-items:flex-end;
-  gap:10px;
-}
-
-/* FIX LỆCH 100% */
-.logo img{
-  width:30px;
-  height:30px;
-  display:block;          /* 🔥 QUAN TRỌNG */
-}
-
-/* TEXT */
-.logo span{
-  font-size:25px;
-  font-weight:700;
-  line-height:40px;       /* 🔥 BẰNG HEIGHT IMG */
-}
-
-/* MENU */
-.menu a{
-  margin-left:25px;
-}
-.logo{
-  transform:translateY(-1px);
-}
-video{
-  border-radius:12px;
-}
+/* ===== MOBILE ===== */
 @media (max-width:768px){
 
   nav{
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
     padding:15px;
   }
 
   .hamburger{
     display:block;
-    font-size:24px;
-    cursor:pointer;
   }
 
   .menu{
@@ -189,7 +195,7 @@ video{
     background:var(--card);
     border-radius:10px;
     padding:15px;
-    display:none;              /* 🔥 mặc định ẩn */
+    display:none;
     flex-direction:column;
     width:200px;
   }
@@ -200,7 +206,7 @@ video{
   }
 
   .menu.active{
-    display:flex;              /* 🔥 bấm mới hiện */
+    display:flex;
   }
 
   .hero{
@@ -209,7 +215,7 @@ video{
   }
 
   .hero h1{
-    font-size: clamp(28px, 5vw, 48px);
+    font-size:clamp(28px,5vw,48px);
   }
 
   .section{
@@ -221,19 +227,4 @@ video{
     grid-template-columns:1fr;
   }
 
-}
-
-  img{
-    height:auto;
-  }
-
-  video{
-    height:auto;
-  }
-}
-/* HAMBURGER */
-.hamburger{
-  display:none;
-  font-size:24px;
-  cursor:pointer;
 }
