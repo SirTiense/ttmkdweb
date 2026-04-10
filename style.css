@@ -18,13 +18,6 @@ body{
 }
 
 /* NAV */
-nav{
-  display:flex;
-  justify-content:space-between;
-  padding:20px 60px;
-  background:#020617;
-}
-
 nav a{
   color:var(--text);
   text-decoration:none;
