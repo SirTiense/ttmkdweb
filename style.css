@@ -203,7 +203,9 @@ video{
     flex-wrap:wrap;
     justify-content:center;
   }
-
+  .menu{
+  display:none;
+}
   .menu a{
     margin:8px;
     font-size:14px;
