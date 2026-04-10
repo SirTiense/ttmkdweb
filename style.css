@@ -174,47 +174,42 @@ nav{
 video{
   border-radius:12px;
 }
-/* ===== MOBILE ===== */
-@media (max-width: 768px){
- .menu{
-    gap:8px;
-  }
+@media (max-width:768px){
+
   nav{
-    flex-direction:column;
-    gap:10px;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
     padding:15px;
   }
+
   .hamburger{
     display:block;
     font-size:24px;
     cursor:pointer;
   }
+
   .menu{
     position:absolute;
-    top:70px;
-    right:20px;
+    top:60px;
+    right:15px;
     background:var(--card);
     border-radius:10px;
     padding:15px;
-    display:none;
+    display:none;              /* 🔥 mặc định ẩn */
     flex-direction:column;
     width:200px;
   }
-  .menu{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-  .menu{
-  display:none;
-}
+
   .menu a{
-    margin:8px;
+    margin:10px 0;
     font-size:14px;
   }
+
   .menu.active{
-    display:flex;
+    display:flex;              /* 🔥 bấm mới hiện */
   }
+
   .hero{
     padding:60px 20px;
     text-align:center;
@@ -232,6 +227,8 @@ video{
   .grid{
     grid-template-columns:1fr;
   }
+
+}
 
   img{
     height:auto;
