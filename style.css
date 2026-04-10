@@ -176,7 +176,9 @@ footer{
   padding:40px;
   color:var(--muted);
 }
-
+.hamburger{
+  display:none;
+}
 /* ===== MOBILE ===== */
 @media (max-width:768px){
 
@@ -226,7 +228,9 @@ footer{
   .grid{
     grid-template-columns:1fr;
   }
-    .hamburger{
-    display:none !important;
+}
+@media (min-width:769px){
+  .hamburger{
+    display:none;
   }
 }
