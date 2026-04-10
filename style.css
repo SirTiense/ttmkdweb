@@ -226,5 +226,7 @@ footer{
   .grid{
     grid-template-columns:1fr;
   }
-
+    .hamburger{
+    display:none !important;
+  }
 }
